@@ -2,6 +2,7 @@ package com.example.sweater.controller;
 
 import com.example.sweater.domain.Event;
 import com.example.sweater.repos.EventRepo;
+import com.example.sweater.repos.EventUserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,9 @@ public class EventController {
 
     @Autowired
     private EventRepo eventRepo;
+
+    @Autowired
+    private EventUserRepo eventUserRepo;
 
     @GetMapping("eventRegistration")
     public String eventRegistration(){return "eventRegistration";}
@@ -70,6 +74,7 @@ public class EventController {
     public String deleteEvent(@RequestParam("eventId") Event event){
 
         eventRepo.delete(event);
+        eventUserRepo.delete(eventUserRepo.findByEventId(event.getId()));
 
         return "redirect:/event/eventList";
     }
