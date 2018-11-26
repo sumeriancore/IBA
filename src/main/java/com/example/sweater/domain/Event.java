@@ -8,7 +8,7 @@ public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private Long id;
+    private Long eventId;
     private String nameOfEvent;
     private String typeOfEvent;
     private String date;
@@ -26,11 +26,11 @@ public class Event {
     }
 
     public Long getId() {
-        return id;
+        return eventId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long eventId) {
+        this.eventId = eventId;
     }
 
     public String getNameOfEvent() {
