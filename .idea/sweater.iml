@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <dependency>spring_boot_com.example.sweater.Application</dependency>
+          <file>file://$MODULE_DIR$/src/main/java/com/example/sweater/Application.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/example/sweater/config/MvcConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/example/sweater/config/WebSecurityConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

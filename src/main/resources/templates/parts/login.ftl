@@ -2,11 +2,8 @@
     <form action="${path}" method="post">
         <div><label> <h6>User Name:</h6>  <input class="form-control" type="text" name="username"/> </label></div>
         <div><label> <h6>Password:</h6> <input class="form-control" type="password" name="password"/> </label></div>
-
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-        <#--<div><input type="submit" value="Sign In"/></div>-->
         <button type="submit" class="btn btn-dark"><h6 style="color: blueviolet">Sign In</h6></button>
-
     </form>
 </#macro>
 
@@ -14,8 +11,7 @@
     <form action="${path}" method="post">
         <div><label> <h6>User Name :</h6> <input class="form-control" type="text" name="username"/> </label></div>
         <div><label> <h6>User Surname :</h6> <input class="form-control" type="text" name="surname"/> </label></div>
-        <div><label>  <h6>Password :</h6> <input class="form-control" type="password" name="password"/> </label></div>
-
+        <div><label> <h6>Password :</h6> <input class="form-control" type="password" name="password"/> </label></div>
         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
         <button type="submit" class="btn btn-dark"><h6 style="color: blueviolet">Sign In</h6></button>
     </form>

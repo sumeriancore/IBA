@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .anyRequest().authenticated()//для всех остальных запросов требуется авторизация
                 .and()
                     .formLogin()//форм логин
-                    .loginPage("/login")//логин находится вот на таком мэппинге
+                    .loginPage("/login")//логин находится вот на таком маппинге
                     .permitAll()//разрешаем этим пользоваться всем
                 .and()
                     .logout()//логаут

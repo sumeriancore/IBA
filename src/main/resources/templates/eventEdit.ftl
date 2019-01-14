@@ -15,7 +15,6 @@
                 <th class="event_list" width="170px"><h4>Partakers</h4></th>
                 <th class="event_list" width="150px"><h4>Price</h4></th>
                 <th></th>
-
             </tr>
             <tr align="center">
                 <th class="text-input" width="50px"><input class="form-control" type="text" name="nameOfEvent" value="${event.nameOfEvent}"></th>
@@ -30,13 +29,10 @@
     <input type="hidden" value="${event.id}" name="eventId">
     <input type="hidden" value="${_csrf.token}" name="_csrf">
     <button class="btn btn-dark" type="submit" style="margin-top: 15px; color: blueviolet"><h6>Save</h6></button>
-
 </form>
-
 <form action="/event/deleteEvent" method="post">
     <input type="hidden" value="${event.id}" name="eventId">
     <input type="hidden" value="${_csrf.token}" name="_csrf">
     <button class="btn btn-dark" type="submit" style="margin-top: 15px; color: blueviolet"><h6>Delete</h6></button>
 </form>
-
 </@c.page>

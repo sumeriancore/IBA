@@ -30,9 +30,6 @@ public class ListOfUserEventController {
         for(TableUserEvent tableUserEvent : listUserEventTables){
             listOfEvents.add(eventRepo.findByEventId(tableUserEvent.getEventId()));
         }
-//        for(Event event : listOfEvents){
-//            model.addAttribute(event);
-//        }
         model.addAttribute(listOfEvents);
         if(listOfEvents.size() == 0){
             return "nullCountOfEvent";

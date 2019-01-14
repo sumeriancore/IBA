@@ -19,7 +19,7 @@ public class RegistrationController {
 
     @GetMapping("/registration")
     public String registration(){
-        return "registration";//возвращает вьюху
+        return "registration";
     }
 
     @PostMapping("/registration")
